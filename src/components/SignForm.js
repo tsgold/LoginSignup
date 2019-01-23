@@ -13,10 +13,10 @@ class SignForm extends Component{
 
 
 
-          <Text>Nama : <TextInput/></Text>
-          <Text>Username : <TextInput/></Text>
-          <Text>Password : <TextInput/></Text>
-          <Text>Retype Password : <TextInput/></Text>
+          <Text>Nama :</Text><TextInput style={styles.inputBox} placeholder="Nama" placeholderTextColor="#ffffff"/>
+          <Text>Username : <TextInput style={styles.inputBox} placeholder="username" placeholderTextColor="#ffffff"/></Text>
+          <Text>Password : <TextInput style={styles.inputBox} placeholder="Password" placeholderTextColor="#ffffff"/></Text>
+          <Text>Retype Password : <TextInput style={styles.inputBox}  placeholder="Retype" placeholderTextColor="#ffffff"/></Text>
 
           <TouchableOpacity></TouchableOpacity>
 
@@ -34,17 +34,17 @@ const styles = StyleSheet.create({
         alignItems: 'flex-start',
         // backgroundColor:'#7697a0'
         backgroundColor:"#f0f8ff"
-      },
-    
-      inputBox: {
+        },
+
+    inputBox: {
         width: 300,
         backgroundColor: 'rgba(118,151,160,.5)',
-        borderRadius: 25,
-        paddingHorizontal: 16,
+        borderRadius: 10,
+        paddingHorizontal: 10,
         fontSize: 16,
         color: '#7697a0',
-        marginVertical:10
-      }
+        // marginVertical:10
+        }
 })
 
 export default SignForm

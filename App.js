@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
 import { createStackNavigator } from 'react-navigation';
 import Logo from './src/components/Logo';
+import SignForm from './src/components/SignForm';
 
 
 class App extends Component {
