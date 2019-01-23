@@ -13,12 +13,14 @@ class SignForm extends Component{
 
 
 
-          <Text>Nama :</Text><TextInput style={styles.inputBox} placeholder="Nama" placeholderTextColor="#ffffff"/>
-          <Text>Username : <TextInput style={styles.inputBox} placeholder="username" placeholderTextColor="#ffffff"/></Text>
-          <Text>Password : <TextInput style={styles.inputBox} placeholder="Password" placeholderTextColor="#ffffff"/></Text>
-          <Text>Retype Password : <TextInput style={styles.inputBox}  placeholder="Retype" placeholderTextColor="#ffffff"/></Text>
+          <Text>Nama :</Text><TextInput style={styles.inputBox} placeholder="name" placeholderTextColor="#ffffff"/>
+          <Text>Username :</Text><TextInput style={styles.inputBox} placeholder="username" placeholderTextColor="#ffffff"/>
+          <Text>Password :</Text><TextInput style={styles.inputBox} placeholder="Password" placeholderTextColor="#ffffff"/>
+          <Text>Retype Password :</Text><TextInput style={styles.inputBox}  placeholder="Retype" placeholderTextColor="#ffffff"/>
 
-          <TouchableOpacity></TouchableOpacity>
+          <TouchableOpacity style={styles.button}>
+              <Text style={styles.buttonText}>Register</Text>
+          </TouchableOpacity>
 
 
 
@@ -30,20 +32,36 @@ class SignForm extends Component{
 const styles = StyleSheet.create({
     container: {
         flexGrow: 1,
-        justifyContent: 'flex-start',
-        alignItems: 'flex-start',
+        justifyContent: 'center',
+        alignItems: 'center',
         // backgroundColor:'#7697a0'
         backgroundColor:"#f0f8ff"
         },
 
     inputBox: {
-        width: 300,
+        width:"90%",
         backgroundColor: 'rgba(118,151,160,.5)',
         borderRadius: 10,
         paddingHorizontal: 10,
-        fontSize: 16,
+        fontSize: 18,
         color: '#7697a0',
-        // marginVertical:10
+        marginVertical:10
+        },
+    
+    button: {
+        width: 300,
+        backgroundColor: '#4a707a',
+        borderRadius: 25,
+        marginVertical: 10,
+        paddingVertical: 13,
+        alignItems:"center"
+        },
+    
+    buttonText: {
+        fontSize: 16,
+        fontWeight: '500',
+        color:'#ffffff',
+        textAlign:'center'
         }
 })
 
